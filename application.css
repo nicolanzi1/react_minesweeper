@@ -9,13 +9,13 @@ body {
 }
 
 h1 {
-    font-size: 24px;
+    font-size: 40px;
     text-align: center;
     color: dodgerblue;
 }
 
 p {
-    font-size: 13px;
+    font-size: 20px;
     text-align: center;
     color: orange;
 }
@@ -34,7 +34,8 @@ p {
 .tile {
     height: 20px;
     width: 20px;
-    background: purple;
+    background: lightcoral;
+    color: white;
     float: left;
     border-style: outset;
     border-width: 2px;
@@ -52,4 +53,43 @@ p {
 
 .flagged, .bombed {
     color: red;
+    font-size: 20px;
+}
+
+.modal-screen {
+    z-index: 998;
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    background: rgba(0, 0, 0, .3);
+}
+
+.modal-content {
+    z-index: 999;
+    position: absolute;
+    background: turquoise;
+    border-radius: 5px;
+    border: 2px solid purple;
+    font-size: 20px;
+    width: 200px;
+    height: 120px;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.modal-content p {
+    color: yellow;
+    font-size: 18px;
+    padding-top: 10px;
+}
+
+button {
+    background: lime;
+    color: teal;
+    border-radius: 5px;
+    border: 2px solid purple;
 }

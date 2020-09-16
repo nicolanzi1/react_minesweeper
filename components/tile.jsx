@@ -32,10 +32,7 @@ export default class Tile extends React.Component {
         klass = `tile ${klass}`;
 
         return (
-            <div className={klass}
-                onClick={this.handleClick}>
-                {text}
-            </div>
-        )
+            <div className={klass} onClick={this.handleClick}>{text}</div>
+        );
     }
 }
