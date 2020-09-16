@@ -7,7 +7,9 @@ export default class Tile extends React.Component {
 
     render() {
         return (
-            "T"
+            <div>
+                "T"
+            </div>
         )
     }
 }
