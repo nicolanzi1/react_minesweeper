@@ -1,0 +1,55 @@
+#main {
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+body {
+    font-family: 'Orbitron', sans-serif;
+}
+
+h1 {
+    font-size: 24px;
+    text-align: center;
+    color: dodgerblue;
+}
+
+p {
+    font-size: 13px;
+    text-align: center;
+    color: orange;
+}
+
+.row {
+    width: 250px;
+    margin: 0 auto;
+}
+
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.tile {
+    height: 20px;
+    width: 20px;
+    background: purple;
+    float: left;
+    border-style: outset;
+    border-width: 2px;
+    line-height: 20px;
+    padding-left: 3px;
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+}
+
+.explored {
+    border-style: inset;
+}
+
+.flagged, .bombed {
+    color: red;
+}
