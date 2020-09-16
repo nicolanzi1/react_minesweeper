@@ -17,7 +17,7 @@ export default class Tile extends React.Component {
         if (tile.explored) {
             if (tile.bombed) {
                 klass = 'bombed';
-                text = '\U+1F4A3';
+                text = '\u2622';
             } else {
                 klass = 'explored';
                 count = tile.adjacentBombCount();
@@ -25,11 +25,11 @@ export default class Tile extends React.Component {
             }
         } else if (tile.flagged) {
             klass = 'flagged';
-            text = '\U+1F6A9';
+            text = '\u2691';
         } else {
             klass = 'unexplored';
         }
-        klass = `tile klass${klass}`;
+        klass = `tile ${klass}`;
 
         return (
             <div className={klass}

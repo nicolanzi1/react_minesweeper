@@ -10,15 +10,25 @@ export default class Game extends React.Component {
         this.updateGame = this.updateGame.bind(this);
     }
 
-    updateGame(tile) {
+    updateGame(tile, flagged) {
+        if (flagged) {
+            tile.toggleFlag();
+        } else {
+            tile.explore();
+        }
+
         this.setState({ board: this.state.board });
     }
 
     render() {
-        return (
-            <div>
-                <Board board={this.state.board} updateGame={this.state.updateGame} />
-            </div>
-        )
+        if (this.state.board.lost() || this.state.board.won) {
+            const text = this.state.board.won() ? "Ok ok, you win!" : "Oh oh, you lose!";
+            return (
+                <div>
+                    <Board board={this.state.board} updateGame={this.state.updateGame} />
+                    <p>{text}</p>
+                </div>
+            )
+        }
     }
 }
