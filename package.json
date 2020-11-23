@@ -1,17 +1,17 @@
 {
-  "homepage": "https://nicolanzi1.github.io/react_minesweeper",
   "name": "nicola_lanzillotta_minesweeper",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack --mode=development --watch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "homepage": "https://nicolanzi1.github.io/react_minesweeper",
   "dependencies": {
     "@babel/core": "^7.11.6",
     "@babel/preset-env": "^7.11.5",
